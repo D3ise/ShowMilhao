@@ -53,11 +53,15 @@ namespace ShowMilhao
      if ( RespostaEscolhida == RespostaCerta ) 
      {
         var b = Qual (RespostaEscolhida);
-            b.BackgroundColor = Color.Green;
+            b.BackgroundColor = Colors.Green;
         return true;
      }
      else
      {
+        var bcerto = Qual (RespostaCerta);
+        var berrado = Qual (RespostaEscolhida);
+        bcerto.BackgroundColor = Colors.Yellow;
+        berrado.BackgroundColor = Colors.Red;
         return false;
      }
    }
@@ -71,7 +75,7 @@ namespace ShowMilhao
     return buttonRespostaTres;
     else if (RespostaEscolhida == 4)
     return buttonRespostaQuatro;
-    else if (RespostaEscolhida == 5)
+    else 
     return buttonRespostaCinco;
    }
 
