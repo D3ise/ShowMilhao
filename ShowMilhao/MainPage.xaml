@@ -26,6 +26,7 @@
                 Grid.ColumnSpan="3" />
 
             <Label Text="PERGUNTA:"
+                Margin="5"
                 BackgroundColor="Transparent"
                 TextColor="Black"
                 FontSize="14"
