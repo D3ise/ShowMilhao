@@ -23,30 +23,41 @@ namespace ShowMilhao
    }
    public void Desenhar ()
    {
-     labelPergunta.Text = Pergunta;
-     buttonRespostaUm.Text = RespostaUm;
-     buttonRespostaDois.Text = RespostaDois;
-     buttonRespostaTres.Text = RespostaTres;
+     labelPergunta.Text        = Pergunta;
+     buttonRespostaUm.Text     = RespostaUm;
+     buttonRespostaDois.Text   = RespostaDois;
+     buttonRespostaTres.Text   = RespostaTres;
      buttonRespostaQuatro.Text = RespostaQuatro;
-     buttonRespostaCinco.Text = RespostaCinco;
+     buttonRespostaCinco.Text  = RespostaCinco;
+
+     buttonRespostaUm!.BackgroundColor = Color.FromArgb("#0a578f");
+     buttonRespostaUm!.TextColor       = Colors.White;
+     buttonRespostaDois!.BackgroundColor = Color.FromArgb("#0a578f");
+     buttonRespostaDois!.TextColor       = Colors.White;
+     buttonRespostaTres!.BackgroundColor = Color.FromArgb("#0a578f");
+     buttonRespostaTres!.TextColor       = Colors.White;
+     buttonRespostaQuatro!.BackgroundColor = Color.FromArgb("#0a578f");
+     buttonRespostaQuatro!.TextColor       = Colors.White;
+     buttonRespostaCinco!.BackgroundColor = Color.FromArgb("#0a578f");
+     buttonRespostaCinco!.TextColor       = Colors.White;
    }
-   public Questao (Label LP, Button bt01, Button bt02, Button bt03, Button bt04, Button bt05)
+   public Questao (Label labelPerg, Button btnResp01, Button btnResp02, Button btnResp03, Button btnResp04, Button btnResp05)
    {
-     labelPergunta = LP;
-     buttonRespostaUm = bt01;
-     buttonRespostaUm = bt02;
-     buttonRespostaUm = bt03;
-     buttonRespostaUm = bt04;
-     buttonRespostaUm = bt05;
+     labelPergunta = labelPerg;
+     buttonRespostaUm = btnResp01;
+     buttonRespostaDois = btnResp02;
+     buttonRespostaTres = btnResp03;
+     buttonRespostaQuatro = btnResp04;
+     buttonRespostaCinco = btnResp05;
    }
-   public void ConfigurarDesenho (Label LP, Button bt01, Button bt02, Button bt03, Button bt04, Button bt05)
+   public void ConfigurarDesenho (Label labelPerg, Button btnResp01, Button btnResp02, Button btnResp03, Button btnResp04, Button btnResp05)
    {
-     labelPergunta = LP;
-     buttonRespostaUm = bt01;
-     buttonRespostaUm = bt02;
-     buttonRespostaUm = bt03;
-     buttonRespostaUm = bt04;
-     buttonRespostaUm = bt05;
+     labelPergunta = labelPerg;
+     buttonRespostaUm = btnResp01;
+     buttonRespostaDois = btnResp02;
+     buttonRespostaTres = btnResp03;
+     buttonRespostaQuatro = btnResp04;
+     buttonRespostaCinco = btnResp05;
    }
    public bool VerificaResposta (int RespostaEscolhida)
    {
