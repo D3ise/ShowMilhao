@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowMilhao.Inicio">
+
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="80"/>
+        <RowDefinition Height="145"/>
+      </Grid.RowDefinitions>
+
+            <Image Source="inicio.png"
+                Aspect="AspectFill"
+                Grid.RowSpan="3"/>
+
+            <Button Text="COMEÇAR"
+                BackgroundColor="#0a578f"
+                Clicked="Ir"
+                CornerRadius="20"
+                TextColor="white"
+                FontSize="18"
+                Grid.Row="1"
+                Margin="60,10,60,10"
+                BorderWidth="1"
+                BorderColor="Black" />
+
+    </Grid>
+
+            
+
+</ContentPage>

@@ -71,8 +71,8 @@ namespace ShowMilhao
      {
         var bcerto = Qual (RespostaCerta);
         var berrado = Qual (RespostaEscolhida);
-        bcerto.BackgroundColor = Colors.Yellow;
-        berrado.BackgroundColor = Colors.Red;
+        bcerto.BackgroundColor = Color.FromArgb("#fad72a");
+        berrado.BackgroundColor = Color.FromArgb("#d11702");
         return false;
      }
    }
