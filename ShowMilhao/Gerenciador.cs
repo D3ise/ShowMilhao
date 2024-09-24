@@ -6,11 +6,16 @@ namespace ShowMilhao
     List <int> ListaQuestoesRespondidas = new List <int> ();
     public int Pontos {get; private set;}
     int NivelAtual =0;
+
+    Label labelPontuacao;
+    Label labelNivel;
     Questao QuestaoCorrente;
 
-    public Gerenciador (Label labelPerg, Button btnResp01, Button btnResp02, Button btnResp03, Button btnResp04, Button btnResp05 )
+    public Gerenciador (Label labelPerg, Button btnResp01, Button btnResp02, Button btnResp03, Button btnResp04, Button btnResp05, Label labelPontuacao, Label labelNivel )
      {
         CriaPerguntas ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05 );
+        this.labelPontuacao = labelPontuacao;
+        this.labelNivel = labelNivel;
      }
 
     void CriaPerguntas (Label labelPerg, Button btnResp01, Button btnResp02, Button btnResp03, Button btnResp04, Button btnResp05 )
@@ -254,7 +259,7 @@ namespace ShowMilhao
        Q22.RespostaTres="Taiga";
        Q22.RespostaQuatro="Floresta Negra";
        Q22.RespostaCinco="Floresta da Birmânia";
-       Q22.RespostaCerta=4;
+       Q22.RespostaCerta=2;
        ListaQuestoes.Add (Q22);
 
        var Q23= new Questao();
@@ -276,7 +281,7 @@ namespace ShowMilhao
        Q24.RespostaTres="Jeff Bezos";
        Q24.RespostaQuatro="Elon Musk";
        Q24.RespostaCinco="Mark Zuckerberg";
-       Q24.RespostaCerta=2;
+       Q24.RespostaCerta=5;
        ListaQuestoes.Add (Q24);
 
        var Q25= new Questao();
@@ -287,7 +292,7 @@ namespace ShowMilhao
        Q25.RespostaTres="Buzz Aldrin";
        Q25.RespostaQuatro="Buzz Aldrin";
        Q25.RespostaCinco="Alan Shepard";
-       Q25.RespostaCerta=4;
+       Q25.RespostaCerta=2;
        ListaQuestoes.Add (Q25);
 
        var Q26= new Questao();
@@ -298,7 +303,7 @@ namespace ShowMilhao
        Q26.RespostaTres="Itália";
        Q26.RespostaQuatro="Estados Unidos";
        Q26.RespostaCinco="Canadá";
-       Q26.RespostaCerta=4;
+       Q26.RespostaCerta=2;
        ListaQuestoes.Add (Q26);
 
        var Q27= new Questao();
@@ -320,7 +325,7 @@ namespace ShowMilhao
        Q28.RespostaTres="Bahia";
        Q28.RespostaQuatro="São Paulo";
        Q28.RespostaCinco="Paraná";
-       Q28.RespostaCerta=3;
+       Q28.RespostaCerta=4;
        ListaQuestoes.Add (Q28);
 
        var Q29= new Questao();
@@ -331,134 +336,136 @@ namespace ShowMilhao
        Q29.RespostaTres=" Platão";
        Q29.RespostaQuatro=" Descartes";
        Q29.RespostaCinco="Nietzsche";
-       Q29.RespostaCerta=2;
+       Q29.RespostaCerta=3;
        ListaQuestoes.Add (Q29);
 
        var Q30= new Questao();
        Q30.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q30.Pergunta = "Quem foi o primeiro presidente do Brasil?";
-       Q30.RespostaUm="Getúlio Vargas";
-       Q30.RespostaDois="Juscelino Kubitschek";
-       Q30.RespostaTres=" Deodoro da Fonseca";
-       Q30.RespostaQuatro="Floriano Peixoto";
-       Q30.RespostaCinco="João Goulart";
-       Q30.RespostaCerta=3;
+       Q30.Pergunta = "Qual é o rio mais longo do mundo?";
+       Q30.RespostaUm="Nilo";
+       Q30.RespostaDois="Amazonas";
+       Q30.RespostaTres="  Mississipi";
+       Q30.RespostaQuatro="Yangtzé";
+       Q30.RespostaCinco="Danúbio";
+       Q30.RespostaCerta=1;
        ListaQuestoes.Add (Q30);
 
        var Q31= new Questao();
        Q31.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q31.Pergunta = "Em qual continente está localizado o Egito?";
-       Q31.RespostaUm="Ásia";
-       Q31.RespostaDois=" África";
-       Q31.RespostaTres="Europa";
-       Q31.RespostaQuatro="América do Sul";
-       Q31.RespostaCinco="Oceania";
+       Q31.Pergunta = "Quem pintou A Última Ceia?";
+       Q31.RespostaUm=" Michelangelo";
+       Q31.RespostaDois=" Leonardo da Vinci";
+       Q31.RespostaTres="Pablo Picasso";
+       Q31.RespostaQuatro="Salvador Dalí";
+       Q31.RespostaCinco="Vincent van Gogh";
        Q31.RespostaCerta=2;
        ListaQuestoes.Add (Q31);
 
        var Q32= new Questao();
        Q32.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q32.Pergunta = "Qual desses animais é um mamífero?";
-       Q32.RespostaUm="Pinguim";
-       Q32.RespostaDois="Tubarão";
-       Q32.RespostaTres="Golfinho";
-       Q32.RespostaQuatro="Jacaré";
-       Q32.RespostaCinco="Salamandra";
+       Q32.Pergunta = " Qual é a montanha mais alta do mundo?";
+       Q32.RespostaUm="Kilimanjaro";
+       Q32.RespostaDois="K2";
+       Q32.RespostaTres="Everest";
+       Q32.RespostaQuatro=" Aconcágua";
+       Q32.RespostaCinco=" Mont Blanc";
        Q32.RespostaCerta=3;
        ListaQuestoes.Add (Q32);
 
        var Q33= new Questao();
        Q33.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q33.Pergunta = "Quantos estados existem no Brasil?";
-       Q33.RespostaUm="26";
-       Q33.RespostaDois="25";
-       Q33.RespostaTres="27";
-       Q33.RespostaQuatro="28";
-       Q33.RespostaCinco="29";
+       Q33.Pergunta = "Quem foi o primeiro presidente dos Estados Unidos?";
+       Q33.RespostaUm="Abraham Lincoln";
+       Q33.RespostaDois=" Thomas Jefferson";
+       Q33.RespostaTres=" George Washington";
+       Q33.RespostaQuatro=" John Adams";
+       Q33.RespostaCinco="Theodore Roosevelt";
        Q33.RespostaCerta=3;
        ListaQuestoes.Add (Q33);
 
        var Q34= new Questao();
        Q34.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q34.Pergunta = "Qual é o maior oceano do mundo?";
-       Q34.RespostaUm=" Atlântico";
-       Q34.RespostaDois=" Índico";
-       Q34.RespostaTres="Ártico";
-       Q34.RespostaQuatro="Pacífico";
-       Q34.RespostaCinco="Antártico";
-       Q34.RespostaCerta=4;
+       Q34.Pergunta = "Qual é a fórmula química do sal de cozinha?";
+       Q34.RespostaUm=" H2SO4";
+       Q34.RespostaDois=" NaCl";
+       Q34.RespostaTres="KOH";
+       Q34.RespostaQuatro=" C6H12O6";
+       Q34.RespostaCinco="CO2";
+       Q34.RespostaCerta=2;
        ListaQuestoes.Add (Q34);
 
        var Q35= new Questao();
        Q35.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q35.Pergunta = "Qual é o órgão responsável pela circulação do sangue no corpo humano?";
-       Q35.RespostaUm="Pulmão";
-       Q35.RespostaDois="Estômago";
-       Q35.RespostaTres="Rim";
-       Q35.RespostaQuatro="Fígado";
-       Q35.RespostaCinco="Coração";
-       Q35.RespostaCerta=5;
+       Q35.Pergunta = "Qual é a capital do Japão?";
+       Q35.RespostaUm=" Seul";
+       Q35.RespostaDois="Pequim";
+       Q35.RespostaTres="Tóquio";
+       Q35.RespostaQuatro="Bangkok";
+       Q35.RespostaCinco="Xangai";
+       Q35.RespostaCerta=3;
        ListaQuestoes.Add (Q35);
 
        var Q36= new Questao();
        Q36.ConfigurarDesenho (labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q36.Pergunta = "Em que país se encontra a Torre Eiffel?";
-       Q36.RespostaUm="Itália";
-       Q36.RespostaDois="Espanha";
-       Q36.RespostaTres="França";
-       Q36.RespostaQuatro="Alemanha";
-       Q36.RespostaCinco="Suíça";
-       Q36.RespostaCerta=3;
+       Q36.Pergunta = "Quem foi o último faraó do Egito?";
+       Q36.RespostaUm="Ramsés II";
+       Q36.RespostaDois="Tutancâmon";
+       Q36.RespostaTres="Akhenaton";
+       Q36.RespostaQuatro="Cleópatra";
+       Q36.RespostaCinco="Nefertiti";
+       Q36.RespostaCerta=4;
        ListaQuestoes.Add (Q36);
 
        var Q37= new Questao();
        Q37.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q37.Pergunta = "Qual é a fórmula química da água?";
-       Q37.RespostaUm="H2O";
-       Q37.RespostaDois="CO2";
-       Q37.RespostaTres="O2";
-       Q37.RespostaQuatro="NaCl";
-       Q37.RespostaCinco="CH4";
-       Q37.RespostaCerta=1;
+       Q37.Pergunta = "Qual desses países faz parte da Escandinávia?";
+       Q37.RespostaUm=" França";
+       Q37.RespostaDois="Alemanha";
+       Q37.RespostaTres="Dinamarca";
+       Q37.RespostaQuatro="Rússia";
+       Q37.RespostaCinco=" Polônia";
+       Q37.RespostaCerta=3;
        ListaQuestoes.Add (Q37);
 
        var Q38= new Questao();
        Q38.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q38.Pergunta = "Quem foi o autor de O Pequeno Príncipe?";
-       Q38.RespostaUm="J.K. Rowling";
-       Q38.RespostaDois="Antoine de Saint-Exupéry";
-       Q38.RespostaTres="George Orwell";
-       Q38.RespostaQuatro="Mark Twain";
-       Q38.RespostaCinco="Franz Kafka";
+       Q38.Pergunta = "Qual é a cor da faixa do meio da bandeira da Itália?";
+       Q38.RespostaUm="Vermelho";
+       Q38.RespostaDois="Branco";
+       Q38.RespostaTres="Verde";
+       Q38.RespostaQuatro="Azul";
+       Q38.RespostaCinco="Amarelo";
        Q38.RespostaCerta=2;
        ListaQuestoes.Add (Q38);
 
        var Q39= new Questao();
        Q39.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q39.Pergunta = "Em qual país nasceu o futebol moderno?";
-       Q39.RespostaUm="Espanha";
-       Q39.RespostaDois="Brasil";
-       Q39.RespostaTres="Alemanha";
-       Q39.RespostaQuatro="Inglaterra";
-       Q39.RespostaCinco="Itália";
+       Q39.Pergunta = "Qual é o instrumento musical típico da Escócia?";
+       Q39.RespostaUm="Violino";
+       Q39.RespostaDois="Harpa";
+       Q39.RespostaTres="Guitarra";
+       Q39.RespostaQuatro="Gaita de foles";
+       Q39.RespostaCinco="Saxofone";
        Q39.RespostaCerta=4;
        ListaQuestoes.Add (Q39);
 
        var Q40= new Questao();
        Q40.ConfigurarDesenho ( labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
-       Q40.Pergunta = "Qual é o menor país do mundo?";
-       Q40.RespostaUm="Vaticano";
-       Q40.RespostaDois="Mônaco";
-       Q40.RespostaTres="San Marino";
-       Q40.RespostaQuatro="Liechtenstein";
-       Q40.RespostaCinco="Malta";
-       Q40.RespostaCerta=1;
+       Q40.Pergunta = "Qual é a principal fonte de energia do sol?";
+       Q40.RespostaUm="Fissão nuclear";
+       Q40.RespostaDois="Combustão";
+       Q40.RespostaTres="Reações químicas";
+       Q40.RespostaQuatro="Fusões nucleares";
+       Q40.RespostaCinco="Magnetismo";
+       Q40.RespostaCerta=4;
        ListaQuestoes.Add (Q40);
        ProximaQuestao();
       }
 
        public async void VerificaCorreta (int RespostaEscolhida)
        {
+        labelPontuacao.Text="Pontuação:" + Pontos.ToString();
+        labelNivel.Text="Nivel:" + NivelAtual.ToString();
         if (QuestaoCorrente.VerificaResposta(RespostaEscolhida))
         {
             await Task.Delay(1000);
@@ -472,6 +479,19 @@ namespace ShowMilhao
             await App.Current.MainPage.DisplayAlert("FIM", "VOCÊ ERROU", "OK");
             Inicializar();
         }
+
+       }
+
+        public async void Fim (int p)
+       {
+        if (p==10)
+        {
+            NivelAtual=10;
+            await App.Current.MainPage.DisplayAlert("FIM", "VOCÊ ERROU", "OK");
+            Inicializar();
+            
+        }
+
        }
 
        void ProximaQuestao()
@@ -515,6 +535,7 @@ namespace ShowMilhao
          else
          Pontos=1000000;
        }
+ 
 
  }
 
