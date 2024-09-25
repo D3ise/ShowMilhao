@@ -29,6 +29,7 @@ namespace ShowMilhao
        Q1.RespostaQuatro="1975";
        Q1.RespostaCinco="1980";
        Q1.RespostaCerta= 3;
+       Q1.Nivel=1;
        ListaQuestoes.Add(Q1);
 
        var Q2= new Questao();
@@ -40,6 +41,7 @@ namespace ShowMilhao
        Q2.RespostaQuatro="Paris";
        Q2.RespostaCinco="Lisboa";
        Q2.RespostaCerta=4;
+       Q2.Nivel=1;
        ListaQuestoes.Add (Q2);
 
        var Q3= new Questao();
@@ -51,6 +53,7 @@ namespace ShowMilhao
        Q3.RespostaQuatro="Ferro";
        Q3.RespostaCinco="Nitrogênio";
        Q3.RespostaCerta=3;
+       Q3.Nivel=1;
        ListaQuestoes.Add (Q3);
 
        var Q4= new Questao();
@@ -62,6 +65,7 @@ namespace ShowMilhao
        Q4.RespostaQuatro="João Cabral de Melo Neto";
        Q4.RespostaCinco="Luís de Camões";
        Q4.RespostaCerta=2;
+       Q4.Nivel=1;
        ListaQuestoes.Add (Q4);
 
        var Q5= new Questao();
@@ -73,6 +77,7 @@ namespace ShowMilhao
        Q5.RespostaQuatro=" Júpiter";
        Q5.RespostaCinco="Vênus";
        Q5.RespostaCerta=4;
+       Q5.Nivel=1;
        ListaQuestoes.Add (Q5);
 
        var Q6= new Questao();
@@ -84,6 +89,7 @@ namespace ShowMilhao
        Q6.RespostaQuatro="Fe";
        Q6.RespostaCinco="Cu";
        Q6.RespostaCerta=4;
+       Q6.Nivel=1;
        ListaQuestoes.Add (Q6);
 
        var Q7= new Questao();
@@ -95,6 +101,7 @@ namespace ShowMilhao
        Q7.RespostaQuatro="Salvador Dalí";
        Q7.RespostaCinco="Vincent van Gogh";
        Q7.RespostaCerta=2;
+       Q7.Nivel=1;
        ListaQuestoes.Add (Q7);
 
        var Q8= new Questao();
@@ -106,6 +113,7 @@ namespace ShowMilhao
        Q8.RespostaQuatro="Rússia";
        Q8.RespostaCinco="Brasil";
        Q8.RespostaCerta=3;
+       Q8.Nivel=1;
        ListaQuestoes.Add (Q8);
 
        var Q9= new Questao();
@@ -117,6 +125,7 @@ namespace ShowMilhao
        Q9.RespostaQuatro="600.000 km/s";
        Q9.RespostaCinco="750.000 km/s";
        Q9.RespostaCerta=2;
+       Q9.Nivel=1;
        ListaQuestoes.Add (Q9);
 
        var Q10= new Questao();
@@ -128,6 +137,7 @@ namespace ShowMilhao
        Q10.RespostaQuatro="Floriano Peixoto";
        Q10.RespostaCinco="João Goulart";
        Q10.RespostaCerta=3;
+       Q10.Nivel=1;
        ListaQuestoes.Add (Q10);
 
        var Q11= new Questao();
@@ -139,6 +149,7 @@ namespace ShowMilhao
        Q11.RespostaQuatro="América do Sul";
        Q11.RespostaCinco="Oceania";
        Q11.RespostaCerta=2;
+       Q11.Nivel=1;
        ListaQuestoes.Add (Q11);
 
        var Q12= new Questao();
@@ -150,6 +161,7 @@ namespace ShowMilhao
        Q12.RespostaQuatro="Jacaré";
        Q12.RespostaCinco="Salamandra";
        Q12.RespostaCerta=3;
+       Q12.Nivel=1;
        ListaQuestoes.Add (Q12);
 
        var Q13= new Questao();
@@ -161,6 +173,7 @@ namespace ShowMilhao
        Q13.RespostaQuatro="28";
        Q13.RespostaCinco="29";
        Q13.RespostaCerta=3;
+       Q13.Nivel=1;
        ListaQuestoes.Add (Q13);
 
        var Q14= new Questao();
@@ -172,6 +185,7 @@ namespace ShowMilhao
        Q14.RespostaQuatro="Pacífico";
        Q14.RespostaCinco="Antártico";
        Q14.RespostaCerta=4;
+       Q14.Nivel=1;
        ListaQuestoes.Add (Q14);
 
        var Q15= new Questao();
@@ -183,6 +197,7 @@ namespace ShowMilhao
        Q15.RespostaQuatro="Fígado";
        Q15.RespostaCinco="Coração";
        Q15.RespostaCerta=5;
+       Q15.Nivel=1;
        ListaQuestoes.Add (Q15);
 
        var Q16= new Questao();
@@ -194,6 +209,7 @@ namespace ShowMilhao
        Q16.RespostaQuatro="Alemanha";
        Q16.RespostaCinco="Suíça";
        Q16.RespostaCerta=3;
+       Q16.Nivel=1;
        ListaQuestoes.Add (Q16);
 
        var Q17= new Questao();
@@ -205,6 +221,7 @@ namespace ShowMilhao
        Q17.RespostaQuatro="NaCl";
        Q17.RespostaCinco="CH4";
        Q17.RespostaCerta=1;
+       Q17.Nivel=1;
        ListaQuestoes.Add (Q17);
 
        var Q18= new Questao();
@@ -216,6 +233,7 @@ namespace ShowMilhao
        Q18.RespostaQuatro="Mark Twain";
        Q18.RespostaCinco="Franz Kafka";
        Q18.RespostaCerta=2;
+       Q18.Nivel=1;
        ListaQuestoes.Add (Q18);
 
        var Q19= new Questao();
@@ -227,6 +245,7 @@ namespace ShowMilhao
        Q19.RespostaQuatro="Inglaterra";
        Q19.RespostaCinco="Itália";
        Q19.RespostaCerta=4;
+       Q19.Nivel=1;
        ListaQuestoes.Add (Q19);
 
        var Q20= new Questao();
@@ -238,6 +257,7 @@ namespace ShowMilhao
        Q20.RespostaQuatro="Liechtenstein";
        Q20.RespostaCinco="Malta";
        Q20.RespostaCerta=1;
+       Q20.Nivel=1;
        ListaQuestoes.Add (Q20);
 
        var Q21= new Questao();
@@ -249,6 +269,7 @@ namespace ShowMilhao
        Q21.RespostaQuatro=" Atacama";
        Q21.RespostaCinco="Antártico";
        Q21.RespostaCerta= 5;
+       Q21.Nivel=1;
        ListaQuestoes.Add(Q21);
 
        var Q22= new Questao();
@@ -260,6 +281,7 @@ namespace ShowMilhao
        Q22.RespostaQuatro="Floresta Negra";
        Q22.RespostaCinco="Floresta da Birmânia";
        Q22.RespostaCerta=2;
+       Q22.Nivel=1;
        ListaQuestoes.Add (Q22);
 
        var Q23= new Questao();
@@ -271,6 +293,7 @@ namespace ShowMilhao
        Q23.RespostaQuatro="Cobre";
        Q23.RespostaCinco="Alimínio";
        Q23.RespostaCerta=3;
+       Q23.Nivel=1;
        ListaQuestoes.Add (Q23);
 
        var Q24= new Questao();
@@ -282,6 +305,7 @@ namespace ShowMilhao
        Q24.RespostaQuatro="Elon Musk";
        Q24.RespostaCinco="Mark Zuckerberg";
        Q24.RespostaCerta=5;
+       Q24.Nivel=1;
        ListaQuestoes.Add (Q24);
 
        var Q25= new Questao();
@@ -293,6 +317,7 @@ namespace ShowMilhao
        Q25.RespostaQuatro="Buzz Aldrin";
        Q25.RespostaCinco="Alan Shepard";
        Q25.RespostaCerta=2;
+       Q25.Nivel=1;
        ListaQuestoes.Add (Q25);
 
        var Q26= new Questao();
@@ -304,6 +329,7 @@ namespace ShowMilhao
        Q26.RespostaQuatro="Estados Unidos";
        Q26.RespostaCinco="Canadá";
        Q26.RespostaCerta=2;
+       Q26.Nivel=1;
        ListaQuestoes.Add (Q26);
 
        var Q27= new Questao();
@@ -315,6 +341,7 @@ namespace ShowMilhao
        Q27.RespostaQuatro="Antonio Vivaldi";
        Q27.RespostaCinco="Richard Wagner";
        Q27.RespostaCerta=2;
+       Q27.Nivel=1;
        ListaQuestoes.Add (Q7);
 
        var Q28= new Questao();
@@ -326,6 +353,7 @@ namespace ShowMilhao
        Q28.RespostaQuatro="São Paulo";
        Q28.RespostaCinco="Paraná";
        Q28.RespostaCerta=4;
+       Q28.Nivel=1;
        ListaQuestoes.Add (Q28);
 
        var Q29= new Questao();
@@ -337,6 +365,7 @@ namespace ShowMilhao
        Q29.RespostaQuatro=" Descartes";
        Q29.RespostaCinco="Nietzsche";
        Q29.RespostaCerta=3;
+       Q29.Nivel=1;
        ListaQuestoes.Add (Q29);
 
        var Q30= new Questao();
@@ -348,6 +377,7 @@ namespace ShowMilhao
        Q30.RespostaQuatro="Yangtzé";
        Q30.RespostaCinco="Danúbio";
        Q30.RespostaCerta=1;
+       Q30.Nivel=1;
        ListaQuestoes.Add (Q30);
 
        var Q31= new Questao();
@@ -359,6 +389,7 @@ namespace ShowMilhao
        Q31.RespostaQuatro="Salvador Dalí";
        Q31.RespostaCinco="Vincent van Gogh";
        Q31.RespostaCerta=2;
+       Q31.Nivel=1;
        ListaQuestoes.Add (Q31);
 
        var Q32= new Questao();
@@ -370,6 +401,7 @@ namespace ShowMilhao
        Q32.RespostaQuatro=" Aconcágua";
        Q32.RespostaCinco=" Mont Blanc";
        Q32.RespostaCerta=3;
+       Q32.Nivel=1;
        ListaQuestoes.Add (Q32);
 
        var Q33= new Questao();
@@ -381,6 +413,7 @@ namespace ShowMilhao
        Q33.RespostaQuatro=" John Adams";
        Q33.RespostaCinco="Theodore Roosevelt";
        Q33.RespostaCerta=3;
+       Q33.Nivel=1;
        ListaQuestoes.Add (Q33);
 
        var Q34= new Questao();
@@ -392,6 +425,7 @@ namespace ShowMilhao
        Q34.RespostaQuatro=" C6H12O6";
        Q34.RespostaCinco="CO2";
        Q34.RespostaCerta=2;
+       Q34.Nivel=1;
        ListaQuestoes.Add (Q34);
 
        var Q35= new Questao();
@@ -403,6 +437,7 @@ namespace ShowMilhao
        Q35.RespostaQuatro="Bangkok";
        Q35.RespostaCinco="Xangai";
        Q35.RespostaCerta=3;
+       Q35.Nivel=1;
        ListaQuestoes.Add (Q35);
 
        var Q36= new Questao();
@@ -414,6 +449,7 @@ namespace ShowMilhao
        Q36.RespostaQuatro="Cleópatra";
        Q36.RespostaCinco="Nefertiti";
        Q36.RespostaCerta=4;
+       Q36.Nivel=1;
        ListaQuestoes.Add (Q36);
 
        var Q37= new Questao();
@@ -425,6 +461,7 @@ namespace ShowMilhao
        Q37.RespostaQuatro="Rússia";
        Q37.RespostaCinco=" Polônia";
        Q37.RespostaCerta=3;
+       Q37.Nivel=1;
        ListaQuestoes.Add (Q37);
 
        var Q38= new Questao();
@@ -436,6 +473,7 @@ namespace ShowMilhao
        Q38.RespostaQuatro="Azul";
        Q38.RespostaCinco="Amarelo";
        Q38.RespostaCerta=2;
+       Q38.Nivel=1;
        ListaQuestoes.Add (Q38);
 
        var Q39= new Questao();
@@ -447,6 +485,7 @@ namespace ShowMilhao
        Q39.RespostaQuatro="Gaita de foles";
        Q39.RespostaCinco="Saxofone";
        Q39.RespostaCerta=4;
+       Q39.Nivel=1;
        ListaQuestoes.Add (Q39);
 
        var Q40= new Questao();
@@ -458,6 +497,7 @@ namespace ShowMilhao
        Q40.RespostaQuatro="Fusões nucleares";
        Q40.RespostaCinco="Magnetismo";
        Q40.RespostaCerta=4;
+       Q40.Nivel=1;
        ListaQuestoes.Add (Q40);
        ProximaQuestao();
       }
@@ -470,26 +510,19 @@ namespace ShowMilhao
         {
             await Task.Delay(1000);
             AdicionaPontos (NivelAtual);
+            if (NivelAtual == 10)
+        {
+            await App.Current.MainPage.DisplayAlert("PARABÉNS", "VOCÊ CHEGOU AO FIM", "OK");
+            
+        }
             NivelAtual ++;
             ProximaQuestao();
         }
-        else
+        else 
         {
             
             await App.Current.MainPage.DisplayAlert("FIM", "VOCÊ ERROU", "OK");
             Inicializar();
-        }
-
-       }
-
-        public async void Fim (int p)
-       {
-        if (p==10)
-        {
-            NivelAtual=10;
-            await App.Current.MainPage.DisplayAlert("FIM", "VOCÊ ERROU", "OK");
-            Inicializar();
-            
         }
 
        }
@@ -510,6 +543,7 @@ namespace ShowMilhao
          Pontos=0;
          NivelAtual=1;
          ProximaQuestao();
+         ListaQuestoesRespondidas.Clear();
        }
 
        void AdicionaPontos (int n)
