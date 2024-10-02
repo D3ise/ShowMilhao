@@ -1,7 +1,13 @@
 namespace ShowMilhao
 {
-    public class Questao 
- {
+
+    public class Questao : IEquatable <Questao>
+   {
+    public bool Equals (Questao q)
+    {
+      return this.Nivel==q.Nivel;
+    }
+   
    public string Pergunta;
    public string RespostaUm;
    public string RespostaDois;
