@@ -29,7 +29,7 @@ namespace ShowMilhao
        Q1.RespostaQuatro="1975";
        Q1.RespostaCinco="1980";
        Q1.RespostaCerta= 3;
-       Q1.Nivel=1;
+       Q1.Nivel=3;
        ListaTodasQuestoes.Add(Q1);
 
        var Q2= new Questao();
@@ -53,7 +53,7 @@ namespace ShowMilhao
        Q3.RespostaQuatro="Ferro";
        Q3.RespostaCinco="Nitrogênio";
        Q3.RespostaCerta=3;
-       Q3.Nivel=1;
+       Q3.Nivel=5;
        ListaTodasQuestoes.Add (Q3);
 
        var Q4= new Questao();
@@ -65,7 +65,7 @@ namespace ShowMilhao
        Q4.RespostaQuatro="João Cabral de Melo Neto";
        Q4.RespostaCinco="Luís de Camões";
        Q4.RespostaCerta=2;
-       Q4.Nivel=1;
+       Q4.Nivel=3;
        ListaTodasQuestoes.Add (Q4);
 
        var Q5= new Questao();
@@ -113,7 +113,7 @@ namespace ShowMilhao
        Q8.RespostaQuatro="Rússia";
        Q8.RespostaCinco="Brasil";
        Q8.RespostaCerta=3;
-       Q8.Nivel=1;
+       Q8.Nivel=3;
        ListaTodasQuestoes.Add (Q8);
 
        var Q9= new Questao();
@@ -125,7 +125,7 @@ namespace ShowMilhao
        Q9.RespostaQuatro="600.000 km/s";
        Q9.RespostaCinco="750.000 km/s";
        Q9.RespostaCerta=2;
-       Q9.Nivel=1;
+       Q9.Nivel=5;
        ListaTodasQuestoes.Add (Q9);
 
        var Q10= new Questao();
@@ -137,7 +137,7 @@ namespace ShowMilhao
        Q10.RespostaQuatro="Floriano Peixoto";
        Q10.RespostaCinco="João Goulart";
        Q10.RespostaCerta=3;
-       Q10.Nivel=1;
+       Q10.Nivel=5;
        ListaTodasQuestoes.Add (Q10);
 
        var Q11= new Questao();
@@ -149,7 +149,7 @@ namespace ShowMilhao
        Q11.RespostaQuatro="América do Sul";
        Q11.RespostaCinco="Oceania";
        Q11.RespostaCerta=2;
-       Q11.Nivel=1;
+       Q11.Nivel=6;
        ListaTodasQuestoes.Add (Q11);
 
        var Q12= new Questao();
@@ -161,7 +161,7 @@ namespace ShowMilhao
        Q12.RespostaQuatro="Jacaré";
        Q12.RespostaCinco="Salamandra";
        Q12.RespostaCerta=3;
-       Q12.Nivel=1;
+       Q12.Nivel=5;
        ListaTodasQuestoes.Add (Q12);
 
        var Q13= new Questao();
@@ -173,7 +173,7 @@ namespace ShowMilhao
        Q13.RespostaQuatro="28";
        Q13.RespostaCinco="29";
        Q13.RespostaCerta=3;
-       Q13.Nivel=1;
+       Q13.Nivel=7;
        ListaTodasQuestoes.Add (Q13);
 
        var Q14= new Questao();
@@ -197,7 +197,7 @@ namespace ShowMilhao
        Q15.RespostaQuatro="Fígado";
        Q15.RespostaCinco="Coração";
        Q15.RespostaCerta=5;
-       Q15.Nivel=1;
+       Q15.Nivel=8;
        ListaTodasQuestoes.Add (Q15);
 
        var Q16= new Questao();
@@ -209,7 +209,7 @@ namespace ShowMilhao
        Q16.RespostaQuatro="Alemanha";
        Q16.RespostaCinco="Suíça";
        Q16.RespostaCerta=3;
-       Q16.Nivel=1;
+       Q16.Nivel=9;
        ListaTodasQuestoes.Add (Q16);
 
        var Q17= new Questao();
@@ -221,7 +221,7 @@ namespace ShowMilhao
        Q17.RespostaQuatro="NaCl";
        Q17.RespostaCinco="CH4";
        Q17.RespostaCerta=1;
-       Q17.Nivel=1;
+       Q17.Nivel=10;
        ListaTodasQuestoes.Add (Q17);
 
        var Q18= new Questao();
@@ -233,7 +233,7 @@ namespace ShowMilhao
        Q18.RespostaQuatro="Mark Twain";
        Q18.RespostaCinco="Franz Kafka";
        Q18.RespostaCerta=2;
-       Q18.Nivel=1;
+       Q18.Nivel=2;
        ListaTodasQuestoes.Add (Q18);
 
        var Q19= new Questao();
@@ -990,7 +990,7 @@ namespace ShowMilhao
         {
             await Task.Delay(1000);
             AdicionaPontos (NivelAtual);
-            if (NivelAtual == 10)
+            if (NivelAtual == 5)
         {
             await App.Current.MainPage.DisplayAlert("PARABÉNS", "VOCÊ CHEGOU AO FIM", "OK");
             
@@ -1007,7 +1007,7 @@ namespace ShowMilhao
 
        }
 
-       void ProximaQuestao()
+       public void ProximaQuestao()
        {
         var listaQuestoes=ListaTodasQuestoes.Where (d=>d.Nivel==NivelAtual). ToList();
         var nAleat = Random.Shared.Next(0, listaQuestoes.Count-1);
@@ -1052,6 +1052,11 @@ namespace ShowMilhao
          Pontos=500000;
          else
          Pontos=1000000;
+       }
+
+       public Questao GetQuestaoCorrente()
+       {
+        return QuestaoCorrente;
        }
  
 

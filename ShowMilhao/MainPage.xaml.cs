@@ -30,6 +30,20 @@ public partial class MainPage : ContentPage
 	{
 		gerenciador.VerificaCorreta(5);
 	}
+
+	void OnAjudaRetirarClicked (object s, EventArgs e)
+	{
+		var ajuda= new RetiraErradas ();
+		ajuda.ConfigurarDesenho(btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+		ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
+		(s as Button).IsVisible=false;
+	}
+
+	void OnAjudaPulaClicked (object s, EventArgs e)
+	{
+		gerenciador.ProximaQuestao();
+		(s as Button).IsVisible=false;
+	}
 	
 }
 

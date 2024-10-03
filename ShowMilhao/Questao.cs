@@ -5,7 +5,8 @@ namespace ShowMilhao
    {
     public bool Equals (Questao q)
     {
-      return this.Nivel==q.Nivel;
+      return this.Nivel==q.Nivel &&
+      this.Pergunta==q.Pergunta;
     }
    
    public string Pergunta;

@@ -107,7 +107,8 @@
                 BorderWidth="1"
                 BorderColor="Black" />
 
-            <Button Text="CARTAS"
+            <Button Text="PULAR QUESTÃO"
+                Clicked = "OnAjudaPulaClicked"
                 BackgroundColor="#37872f"
                 TextColor="Black"
                 FontSize="12"
@@ -117,7 +118,8 @@
                 BorderWidth="1"
                 BorderColor="Black" />
 
-            <Button Text="RETIRA UMA QUESTÃO ERRADA"
+            <Button Text="RETIRAR QUESTÃO ERRADA"
+                Clicked = "OnAjudaRetirarClicked"
                 BackgroundColor="#37872f"
                 TextColor="Black"
                 FontSize="12"
