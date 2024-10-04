@@ -36,13 +36,21 @@ public partial class MainPage : ContentPage
 		var ajuda= new RetiraErradas ();
 		ajuda.ConfigurarDesenho(btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
 		ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
-		(s as Button).IsVisible=false;
+		(s as Button).IsVisible=true;
 	}
 
 	void OnAjudaPulaClicked (object s, EventArgs e)
 	{
 		gerenciador.ProximaQuestao();
-		(s as Button).IsVisible=false;
+		(s as Button).IsVisible=true;
+	}
+
+	void OnAjudaUniversitarioClicked (object s, EventArgs e)
+	{
+		var ajuda= new Universitarios ();
+		ajuda.ConfigurarDesenho(btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+		ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
+		(s as Button).IsVisible=true;
 	}
 	
 }

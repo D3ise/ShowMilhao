@@ -130,6 +130,7 @@
                 BorderColor="Black" />
 
             <Button Text="UNIVERSITÁRIOS"
+                Clicked = "OnAjudaUniversitarioClicked"
                 BackgroundColor="#37872f"
                 TextColor="Black"
                 FontSize="12"
