@@ -107,7 +107,8 @@
                 BorderWidth="1"
                 BorderColor="Black" />
 
-            <Button Text="PULAR QUESTÃO"
+            <Button Text="Pular 3X"
+                x:Name="Pulou3X"
                 Clicked = "OnAjudaPulaClicked"
                 BackgroundColor="#37872f"
                 TextColor="Black"

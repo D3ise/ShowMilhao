@@ -4,7 +4,7 @@ namespace ShowMilhao;
 public partial class MainPage : ContentPage
 {
     Gerenciador gerenciador;
-	int pulou=1;
+	int pulou=0;
 	public MainPage()
 	{
 		InitializeComponent();
@@ -43,13 +43,19 @@ public partial class MainPage : ContentPage
 
 	void OnAjudaPulaClicked (object s, EventArgs e)
 	{
-		if (pulou==3)
+		if (pulou==2)
 		 (s as Button).IsVisible=false;
 		else
 		{
 		 gerenciador.ProximaQuestao();
 		 pulou++;
-		}
+		};
+		if (pulou ==1)
+		Pulou3X.Text="Pular 2X";
+		else
+		Pulou3X.Text="Pular 1X";
+
+		
 	}
 
 	void OnAjudaUniversitarioClicked (object s, EventArgs e)
